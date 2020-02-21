@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Elevator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="elevator.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+	    <div id="elevator">
+    	    <div><button data-floor="1" class="click-el">Floor 5</button></div>
+    	    <div><button data-floor="2" class="click-el">Floor 4</button></div>
+    	    <div><button data-floor="3" class="click-el">Floor 3</button></div>
+    	    <div><button data-floor="4" class="click-el">Floor 2</button></div>
+    	    <div><button data-floor="5" class="click-el">Floor 1</button></div>
+	    </div>
+        <div><button data-floor="1" class="click-me">Floor 5</button></div>
+	    <div><button data-floor="2" class="click-me">Floor 4</button></div>
+	    <div><button data-floor="3" class="click-me">Floor 3</button></div>
+	    <div><button data-floor="4" class="click-me">Floor 2</button></div>
+	    <div><button data-floor="5" class="click-me">Floor 1</button></div>
+	</div>
+	
+</body>
+
+<style>
+
+    body {
+        background-color: rgb(151, 213, 229);
+    }
+    #container {
+        height: 500px;
+        width: 200px;
+    }
+    
+    #elevator {
+        top: 100px;
+        background-color: rgb(138, 147, 149);
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 3px;
+        position: fixed;
+        transition: top 1.5s, left 1.5s;
+        text-align: center;
+        padding-top: 3px;
+    }
+    
+    .click-me {
+        margin-left: 120px;
+        margin-top: 100px;
+
+    }
+
+    .div#elevator .click-me {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    
+</style>
+</html>
